@@ -180,7 +180,8 @@ Page({
     let paramas = {
       nickname:name,
       gender:gender,
-      cqid:cqid
+      cqid:cqid,
+      userid:userid
     }
 
     utils.post(url, paramas,function(res){
