@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/result/result",
+    "pages/authorize/authorize",
+    "pages/test/test",
+    "pages/blackskin/blackskin",
+    "pages/start/start"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "梦回唐宋",
+    "navigationBarTextStyle":"black"
+  }
+}

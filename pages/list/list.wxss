@@ -1,0 +1,79 @@
+/* pages/list/list.wxss */
+
+
+.cq_container{
+  border-top: solid 1px #E0E0E0;
+  width: 750rpx;
+  height: 100vh;
+}
+.cq_list{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 750rpx;
+  height: 140rpx;
+  padding-top: 20rpx;
+  padding-bottom: 10rpx;
+  background-color: #FBFBFB;
+  border-bottom: solid 1px #E0E0E0;
+}
+
+.cq_list_image{
+  width:140rpx;
+  margin-left: 20rpx;
+}
+
+.cq_list_image image{
+  width:140rpx;
+  height:140rpx;
+}
+
+.cq_list_detail{
+  margin-left: 30rpx;
+  width: 520rpx;
+}
+
+.cq_list_detail_title{
+  color: #000000;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+
+.cq_list_detail_hadplay{
+  font-size: 22rpx;
+  color: #7A7A7A;
+}
+
+.cq_list_detail_hadplay text{
+  color: #9A0003;
+}
+
+.desc{
+  width: 30rpx;
+  position: relative;
+  margin-left: 20rpx;
+}
+.desc image{
+  width: 20rpx;
+  height: 20rpx;
+  position: absolute;
+  right: 20rpx;
+}
+
+
+/*
+* 动画
+*/
+.animation{
+  width: 750rpx;
+  height: 100vh;
+  background-color: black;
+  opacity: 0;
+}
+
+.animation image{
+  width: 500rpx;
+  margin-top: 130px;
+  margin-left: 125rpx;
+}

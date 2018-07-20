@@ -1,0 +1,54 @@
+/* pages/home/home.wxss */
+#content{
+background-size:750rpx;
+background-position:center;
+width: 750rpx;
+height: 100vh;
+background-image: url('https://xcxa.guokehuyu.com/public/uploads/cq/back/back.jpg');
+position: relative;
+}
+
+.goton{
+  position: absolute;
+  width: 450rpx;
+  height: 40px;
+  line-height: 40px;
+  bottom: 50px;
+  left: 150rpx;
+  right: 150rpx;
+  background-color: #CA9C68;
+  border: solid 1px white;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.gotonw{
+  position: absolute;
+  width: 450rpx;
+  height: 40px;
+  line-height: 40px;
+  bottom: 20px;
+  left: 150rpx;
+  right: 150rpx;
+  background-color: #CA9C68;
+  border: solid 1px white;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.gotostart{
+   position: absolute;
+  width: 450rpx;
+  height: 40px;
+  line-height: 40px;
+  bottom: 120px;
+  left: 150rpx;
+  right: 150rpx;
+  background-color: #CA9C68;
+  border: solid 1px white;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}

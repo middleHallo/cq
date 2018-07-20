@@ -1,0 +1,5 @@
+<!--pages/blackskin/blackskin.wxml-->
+<!-- <view style='width:750rpx;height:100vh;background-color:#{{backcolor}}'></view> -->
+
+<view class="ripple" style="{{rippleStyle}}"></view>
+<view class="container" bindtouchstart="containerTap"></view>

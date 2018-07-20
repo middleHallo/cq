@@ -1,0 +1,28 @@
+  <view class='detail-content' style='background-image:url({{backimg}})'>
+    <!-- 示例图 -->
+    <view>
+        <image src='{{example}}' style='width:750rpx;' mode='widthFix'></image>
+    </view>
+    <!-- 性别选择栏 -->
+    <view class='detail_gender' wx:if="{{cqtype=='1'}}">
+        <block>
+          <image src='/images/woman_select.png'  wx:if="{{gender==1}}" bindtap='selectewoman'></image>
+          <image src='/images/woman.png' bindtap='selectewoman' wx:else></image>
+        </block>
+        <block>
+          <image src='/images/man_select.png' bindtap='selectman'  wx:if="{{gender==0}}"></image>
+          <image src='/images/man.png' bindtap='selectman' wx:else></image>
+        </block>
+        
+    </view>
+    <!-- 昵称输入栏 -->
+    <view class='detail_input'>
+        <image src='/images/input.png'></image>
+        <input class='detail_input_input' type='text' value='{{name}}' bindinput='inputname'></input>
+    </view>
+    <!-- 操作栏 -->
+    <view class='detai_action'>
+        <image src='/images/closet.png' class='detail_action_close' bindtap='closeCurrent'></image>
+        <image src='/images/start.png' class='detail_action_start' bindtap='tryonce'></image>
+    </view>
+  </view>

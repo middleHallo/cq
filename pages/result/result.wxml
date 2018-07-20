@@ -1,0 +1,11 @@
+<!--pages/result/result.wxml-->
+<view class='cqall'>
+  <view class='result' hidden='{{resultHidden}}'>
+      <image src='{{url}}' style="width:750rpx;" mode='widthFix' bindtap=''></image>
+      <view class='cqaction'>
+        <button type='primary' open-type='share'>分享给朋友</button>
+        <button type='primary' bindtap='savephotostoab'>保存到相册</button>
+      </view>
+  </view>
+  <canvas canvas-id='share' style='width:750px;height:1205px' hidden='{{canvasHidden}}'></canvas> 
+</view>

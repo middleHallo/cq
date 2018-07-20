@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<!-- 启动页 -->
+<view id='content'>
+  <button bindgetuserinfo='goto' class='goton' open-type='getUserInfo'>进入小程序</button> 
+     <!-- <button bindtap='gototest' class='gotonw'>测试一下</button>    -->
+
+  <button bindtap='gotostart' class='gotostart'>进入进度条加载页</button>    
+  <!-- 
+  <button bindtap='feature'>未来属性</button>
+  <button bindtap='substring'>截取字符串</button> -->
+</view>
+<!-- #CA9C68 -->

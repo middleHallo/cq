@@ -1,0 +1,7 @@
+<!--pages/test/test.wxml-->
+<view class='all'>
+    <scroll-view class='myfeature' hidden='{{featurHidden}}'  scroll-y="true">
+      <image src='{{imageurl}}' style='width:750rpx' mode='widthFix' bindtap='preimage'></image>
+    </scroll-view>
+    <canvas canvas-id='feature' style='width:750px;height:1108px' hidden='{{canvasHidden}}'></canvas>
+</view>

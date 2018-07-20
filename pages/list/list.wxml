@@ -1,0 +1,23 @@
+<!--pages/list/list.wxml-->
+<view class='cq_container' bindtap='click'  animation="{{animCollect}}" hidden='{{viewHidden}}'>
+  <block wx:for="{{cqlist}}" wx:key="{{item.cq_list_id}}">
+     <view class='cq_list' data-idx='{{index}}' catchtap='gotest'> 
+    <!-- <view class='cq_list' data-idx='{{index}}' bindtap=''> -->
+      <view class='cq_list_image'>
+        <image src='{{item.cq_list_img_th_url}}' mode='widthFix'></image>
+      </view>
+      <view class='cq_list_detail'>
+        <view class='cq_list_detail_title'>{{item.cq_list_title}}</view>
+        <view class='cq_list_detail_hadplay'>当前有  <text>{{item.cq_list_had_play}}</text>  人在测</view>
+      </view>
+      <view class='desc'>
+          <image src='/images/desc.png'></image>
+      </view>
+    </view>
+  </block>
+
+   <!-- <button bindtap='sleep'>进入测试页面</button>  -->
+</view>
+<view class='animation' hidden='{{animationHidden}}' animation="{{animaGif}}">
+    <image src='/images/animation.gif' mode='widthFix'></image>
+</view>

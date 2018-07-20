@@ -1,0 +1,9 @@
+<!--pages/start/start.wxml-->
+<view class='startcontent'>
+    <button bindtap='startanimation'>点击出现进度条</button>
+    <view class='startpage' hidden='{{animationHidden}}'>
+      <image src='/images/sea.jpg' style='width:750rpx;' mode='widthFix' id='sea'></image>
+      <image src='/images/loading.gif' id='loading' mode='widthFix'></image>
+      <image src='/images/hulu.gif' id='hulu'></image>
+    </view>
+</view>

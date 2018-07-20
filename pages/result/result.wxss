@@ -1,0 +1,22 @@
+/* pages/result/result.wxss */
+
+.cqall{
+  background-color: #F8F8F8;
+  height: 100vh;
+  width: 750rpx;
+}
+.result{
+  text-align: center;
+  position: relative;
+}
+
+.cqaction{
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

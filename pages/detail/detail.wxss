@@ -1,0 +1,126 @@
+/* pages/detail/detail.wxss */
+/* 整体的view */
+
+.example{
+  vertical-align: top;
+  text-align: center;
+  background-color: #F8F8F8;
+  padding-top: 20rpx;
+  padding-bottom: 50rpx;
+}
+
+.example image{
+  width: 500rpx;
+}
+.detailinfo{
+  height: 110rpx;
+  line-height: 110rpx;
+  vertical-align: middle;
+  border-bottom: solid 1px #F3F3F3;
+  border-top:solid 1px #F3F3F3;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.userinfo{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.staticinfo{
+  display: inline-block;
+  width: 120rpx;
+}
+
+.detailinfo view{
+  width: 590rpx;
+}
+
+.name{
+  
+}
+
+.name input{
+  width: 620rpx;
+  height: 80rpx;
+}
+
+
+/* 最终版 */
+
+.detail-content{
+  background-size:750rpx;
+  background-position:center;
+  width: 750rpx;
+  height: 100vh;
+  position: relative;
+}
+
+.detail_gender{
+  width: 750rpx;
+  position: absolute;
+  bottom: 350rpx;
+  right: 0rpx;
+  left: 0rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.detail_gender image{
+  width: 150rpx;
+  height: 130rpx;
+}
+
+.detail_input{
+  position: absolute;
+  bottom: 230rpx;
+  left: 0rpx;
+  right: 0rpx;
+  width: 750rpx;
+  height: 40px;
+}
+
+.detail_input image{
+  width: 500rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 125rpx;
+  right: 125rpx;
+  bottom: 0rpx;
+}
+
+.detail_input_input{
+  width: 400rpx;
+  height: 60rpx;
+  position: absolute;
+  left: 220rpx;
+  right: 130rpx;
+  bottom: 10rpx;
+  z-index: 10;
+  
+}
+
+.detai_action{
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 60rpx;
+  left: 0px;
+  right: 0px;
+}
+
+.detail_action_start{
+  width: 300rpx;
+  height: 160rpx;
+}
+
+.detail_action_close{
+  width: 300rpx;
+  height: 160rpx;
+}
