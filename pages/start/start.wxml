@@ -6,4 +6,5 @@
       <image src='/images/loading.gif' id='loading' mode='widthFix'></image>
       <image src='/images/hulu.gif' id='hulu'></image>
     </view>
+    <!-- 这里的注释代码用来测试版本控制问题 -->
 </view>
