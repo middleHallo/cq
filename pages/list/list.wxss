@@ -77,3 +77,43 @@
   margin-top: 130px;
   margin-left: 125rpx;
 }
+
+/*
+ * 进度条
+ */
+
+ .loadingview{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+
+.startpage{
+  position: relative;
+}
+
+#hulu{
+  position: absolute;
+  z-index: 10;
+  width: 356rpx;
+  height: 361rpx;
+  left: 210rpx;
+  right: 200rpx;
+  top: 135px;
+}
+
+#loading{
+
+  position: absolute;
+  z-index: 10;
+  width: 600rpx;
+  left: 75rpx;
+  right: 75rpx;
+  bottom: 80px;
+}
+
+#sea{
+  width: 750rpx;
+  height: 100vh;
+}

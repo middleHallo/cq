@@ -10,10 +10,9 @@ Page({
     currentpage:1,
     totalpage:1,
     cqlist:[],
-    animCollect:{}, // 黑洞效果动画
-    animaGif:{}, // 打呼噜效果
     animationHidden:true,
-    viewHidden:false
+    viewHidden:false,
+    loading:false
   },
 
   /**
@@ -43,7 +42,6 @@ Page({
     
     var url = configs.service.requesturl + "index/cqlist?page=" + mypage
     var that = this
-
     utils.getData(url,function(res){
       let datas = res.data
       if (datas.code !== 200){
@@ -56,7 +54,6 @@ Page({
         cqlist: datas.lists
       })
     })
-
   },
 
   /**
@@ -76,61 +73,25 @@ Page({
     let cqtype = currentdata['cq_list_type']
     var url = '../detail/detail?cq_from=0&cq_type=' + cqtype + '&cq_id=' + cqid
 
-    console.log(url)
-    
-    wx.navigateTo({
-      url: url,
-    })
-  },
+   this.setData({
+     viewHidden: true,
+     loading: true
+   })
 
-  /**
-  * 进入浅睡眠测试页面
-  */
-  sleep: function () {
-   
-  },
-
-  /**
-   * 动画效果
-   */
-  click:function(){
-    var that = this
-    var animationcollect = wx.createAnimation({
-      duration: 1000,
-      timingFunction: 'ease-out'
-    })
-    animationcollect.rotate(180).scale(0, 0).opacity(0).step()
-    that.setData({
-      animCollect: animationcollect
-    })
-
-    setTimeout(function(){
-      that.setData({
-        viewHidden:true,
-        animationHidden:false
-      })
-      that.setAnimation()
-    },1000)
-  },
-  /**
-   * 动画效果
-   */
-  setAnimation:function(){
-    var animationcollect = wx.createAnimation({
-      duration: 1000,
-      timingFunction: 'ease-out'
-    })
-    animationcollect.opacity(0.63).backgroundColor('#CC6600').step()
-    this.setData({
-      animaGif: animationcollect
-    })
-    // animaGif
+   setTimeout(function () {
+     wx.navigateTo({
+       url: url,
+     })
+   }, 1300)
   },
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+    this.setData({
+      viewHidden: false,
+      loading: false
+    })
   },
 
   /**
