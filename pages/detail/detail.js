@@ -176,7 +176,7 @@ Page({
     let url = config.service.requesturl + "index/cqresult"
     let nickname = this.data.name
     // 用以测试
-    // console.log(url + "?cqid=" + cqid)
+    console.log(url + "?cqid=" + cqid + "&nickname=vetu&gender=0&userid=" + userid)
     let paramas = {
       nickname:name,
       gender:gender,

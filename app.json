@@ -6,8 +6,8 @@
     "pages/result/result",
     "pages/authorize/authorize",
     "pages/test/test",
-    "pages/blackskin/blackskin",
-    "pages/start/start"
+    "pages/start/start",
+    "pages/illustrated/illustrated"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,11 @@
+/* pages/illustrated/illustrated.wxss */
+
+.content{
+  margin: 0px;
+  padding: 0px;
+}
+.content image{
+  width: 375rpx;
+  margin: 0px;
+  padding: 0px;
+}

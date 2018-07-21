@@ -2,6 +2,7 @@
 <view class='cqall'>
   <view class='result' hidden='{{resultHidden}}'>
       <image src='{{url}}' style="width:750rpx;" mode='widthFix' bindtap=''></image>
+      <image src='/images/tujian.png' class='tujian' bindtap='illustrated'></image>
       <view class='cqaction'>
         <button type='primary' open-type='share'>分享给朋友</button>
         <button type='primary' bindtap='savephotostoab'>保存到相册</button>

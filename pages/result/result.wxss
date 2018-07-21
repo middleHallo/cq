@@ -10,6 +10,14 @@
   position: relative;
 }
 
+.tujian{
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  width: 80px;
+  height: 80px;
+}
+
 .cqaction{
   position: absolute;
   bottom: 30px;
