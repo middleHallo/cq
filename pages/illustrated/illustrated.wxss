@@ -3,9 +3,34 @@
 .content{
   margin: 0px;
   padding: 0px;
+   /* background-color: rebeccapurple;  */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icons{
+  position: relative;
+  width: 375rpx;
+  height: 298rpx;
 }
 .content image{
   width: 375rpx;
   margin: 0px;
   padding: 0px;
+
+  /* background-color: rebeccapurple; */
+}
+
+.mubu{
+  background-color: black;
+  opacity: 0.35;
+  position: absolute;
+  top: 31rpx;
+  left: 55rpx;
+  width: 267rpx;
+  height: 267rpx;
+  border-radius: 50%;
 }

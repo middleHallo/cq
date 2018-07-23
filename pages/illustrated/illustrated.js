@@ -7,27 +7,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-    contents:[]
+    contents:[],
+    cqid:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    this.setData({
+      cqid:options.cqid
+    })
   },
 
   gettj: function(){
 
     let userid = wx.getStorageSync('userid')
-    let cq_id = 'Lavfm32wP33p3gIN9ffVKQSB'
+    // let cq_id = 'M97cErLbLEqo1GJaGMCn5WzS'
+    let cq_id = this.data.cqid
 
     let url = config.service.requesturl + "index/gettj?" + "userid=" + userid + "&cq_id=" + cq_id
+
 
 
     let that = this
 
     utils.getData(url,function(res){
+
+      console.log(res)
+      console.log('userid=' + res.data.contents[7]['userid'])
       
       that.setData({
         contents:res.data.contents

@@ -1,6 +1,7 @@
 <!--pages/illustrated/illustrated.wxml-->
 <view class='content'>
-  <block wx:for="{{contents}}" wx:key="{{item.cq_desc_id}}">
-    <image src='{{item.tj}}' mode='widthFix'></image>
-  </block>
+    <view class='icons' wx:for="{{contents}}" wx:key="{{item.cq_desc_id}}"> 
+      <image src='{{item.tj}}' mode='widthFix'></image>
+       <view class='mubu' style="display:{{item.userid==null?'block':'none'}};"></view> 
+    </view> 
 </view>

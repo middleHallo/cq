@@ -201,7 +201,7 @@ Page({
           wx.setStorageSync('finalname', nickname)
           // 跳转
           wx.navigateTo({
-            url: '../result/result',
+            url: '../result/result?cqid=' + cqid,
           })
         },
         fail:function(){

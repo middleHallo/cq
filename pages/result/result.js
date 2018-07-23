@@ -10,14 +10,17 @@ Page({
     name:'',
     canvasHidden:true,
     resultHidden:true,
-    screenWidth:375
+    screenWidth:375,
+    cqid:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-   
+    this.setData({
+      cqid:options.cqid
+    })
   },
 
   /**
@@ -156,8 +159,9 @@ Page({
    * 跳转图鉴页
    */
   illustrated:function(){
+    let cqid = this.data.cqid
     wx.navigateTo({
-      url: '/pages/illustrated/illustrated',
+      url: '/pages/illustrated/illustrated?cqid=' + cqid,
     })
   },
 
