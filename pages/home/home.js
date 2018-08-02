@@ -42,7 +42,7 @@ Page({
 
     let userid = wx.getStorageSync('userid')
     if(userid != ''){
-      wx.navigateTo({
+      wx.redirectTo({
         url: '/pages/list/list',
       })
     }

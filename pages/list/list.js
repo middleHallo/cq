@@ -33,6 +33,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+   
+    this.setData({
+      viewHidden: false,
+      loading: false
+    })
     this.getcplist(1)
   },
   /**
@@ -88,10 +93,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    this.setData({
-      viewHidden: false,
-      loading: false
-    })
+    
   },
 
   /**
